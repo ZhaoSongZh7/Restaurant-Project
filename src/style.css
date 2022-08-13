@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: url('restaurant-background-image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    z-index: 100;
+}
+
+.restaurant-name {
+    color: white;
+    font-size: 5vw;
+    margin-left: 30px;
+    margin-right: 15px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.restaurant-nav-buttons {
+    display: flex;
+}
+
+.home-button, .menu-button, .contact-button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: clamp(30px, 3vw, 40px);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.home-button:hover, .menu-button:hover, .contact-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.restaurant-hours-location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 53%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 400px;
+    height: 550px;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 6px white solid;
+    box-shadow: 4px 4px 4px 6px rgba(22, 22, 22, 0.4);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.restaurant-hours-title {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.restaurant-hours {
+    font-size: 35px;
+}
+
+.restaurant-location {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.restaurant-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 700px;
+    height: 500px;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.front-page-image {
+    width: 400px;
+    margin-bottom: 30px;
+    border: 3px black solid;
+}
+
+.restaurant-description-content {
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 6px rgba(22, 22, 22, 0.4);
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.restaurant-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 700px;
+    height: 500px;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.restaurant-food-container {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    padding: 45px;
+    border: 5px white solid;
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px 5px rgb(46, 39, 39);
+    margin-bottom: 50px;
+    transition: padding 0.15s;
+    cursor: pointer;
+}
+
+.restaurant-food-container:hover {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.restaurant-food-image {
+    border: 3px white solid;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 700px;
+    height: 525px;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    padding: 40px 50px 40px 50px;
+    border: 6px white solid;
+}
+
+.contact-info-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.contact-info-profile {
+    background-color: rgb(17, 17, 17);
+    padding: 20px;
+    border-radius: 6px;
+    border: 3px rgb(88, 88, 88) solid;
+}
+
+.contact-info-picture {
+    width: 400px;
+    border-radius: 50%;
+    border: 10px black solid;
+}
+
+.contact-info-name {
+    font-size: 60px;
+}
+
+.contact-info-phone-number {
+    font-size: 40px;
+}
+
+.contact-info-email {
+    font-size: 50px;
+}
